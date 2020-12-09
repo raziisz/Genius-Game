@@ -24,6 +24,7 @@ body {
 
 }
 
+
 .blue {
   grid-area: blue;
   background-color: blue;
@@ -48,4 +49,7 @@ body {
 
 .selected {
   opacity: 0.5;
+  transform: scale(0.95);
+  transition: all ease-in-out;
 }
+
