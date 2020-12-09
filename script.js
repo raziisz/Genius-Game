@@ -34,7 +34,7 @@ let lightColor = (element, number) => {
 
   setTimeout(() => {
     element.classList.remove("selected");
-  });
+  }, time);
 };
 
 //che se os botoes clicados são os mesmos da ordem gerada no jogo
@@ -92,6 +92,7 @@ let gameOver = () => {
   playGame();
 }
 
+//inicio fgame
 let playGame = () => {
   alert('Bem vindo a Gênesis! Iniciando um novo jogo!');
   score = 0;
@@ -100,9 +101,9 @@ let playGame = () => {
 }
 
 
-green.addEventListener('click', click(0));
-red.addEventListener('click', click(1));
-yellow.addEventListener('click', click(2));
-blue.addEventListener('click', click(3));
+green.onclick = () => click(0)
+red.onclick = () => click(1);
+yellow.onclick = () => click(2);
+blue.onclick = () => click(3);
 
 playGame();
